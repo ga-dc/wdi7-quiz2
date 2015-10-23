@@ -17,6 +17,7 @@ Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
 ```text
+Clearfixes are cool!
 ```
 
 ### Question #2
@@ -25,7 +26,7 @@ What does the following selector do?  `ul.dropdown > li`?
 
 Select 1:
 ```
-[] Selects all li's which are directly inside a ul of class dropdown (children)
+[X] Selects all li's which are directly inside a ul of class dropdown (children)
 [] Selects all li's which are anywhere inside a ul of class dropdown (any ancestor)
 [] Selects all ul's of class dropdown, as well as the children elements that are li's
 [] Selects all ul's of class dropdown, only if their children are exclusively li's
@@ -39,6 +40,7 @@ Describe the rules of scope in JavaScript.
 
 Your Answer:
 ```text
+Scope is used for rinsing after brushing your teeth.
 ```
 
 
@@ -52,6 +54,9 @@ the variable pizza inside your method.
 Your Answer:
 ```js
 // write code here
+var chicken = {
+  sound: "bawk"
+}
 ```
 
 ## Callbacks
@@ -65,6 +70,9 @@ argument. Finally, demonstrate calling `doSomething` with a function.**
 Your Answer:
 ```js
 // write code here
+function banana() {
+
+}
 ```
 
 ### Question #6
@@ -73,8 +81,8 @@ Your Answer:
 
 Select all that apply:
 ```
-[] Synchronous code runs at an even pace, asynchronous code runs with uneven pacing.
-[] Synchronous code runs all at the same time, asynchronous code runs completely randomly
+[x] Synchronous code runs at an even pace, asynchronous code runs with uneven pacing.
+[x] Synchronous code runs all at the same time, asynchronous code runs completely randomly
 [] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
 ```
 
@@ -88,7 +96,7 @@ Which of the following represents a correct workflow for submitting a PR on a no
 Select 1:
 ```
 [] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
-[] fork on github; git clone <ga_dc_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
+[x] fork on github; git clone <ga_dc_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] git clone <ga_dc_url>; git branch <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git pull; create pull request
 ```
@@ -102,10 +110,10 @@ Which of the following statements will work, assuming jQuery is loaded?
 Select all that apply:
 ```
 [] `$(".post").css("background", "peachpuff")`
-[] `$(".post").innerHTML`
-[] `$(".post").html()`
+[x] `$(".post").innerHTML`
+[x] `$(".post").html()`
 [] `document.getElementsByClassName("post")[0].innerHTML`
-[] `document.getElementsByClassName("post").innerHTML`
+[x] `document.getElementsByClassName("post").innerHTML`
 ```
 
 ### Question #9
@@ -117,6 +125,7 @@ body, that says "hello".
 Your Answer:
 ```js
 // your code here
+$(".awesome").boop()
 ```
 
 ## Software Development Processes
@@ -132,4 +141,5 @@ Finally, link to your repo on github in the space below.
 
 Your Answer:
 ```text
+* As a user, I want to watch netflix, so I can chill.
 ```
