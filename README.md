@@ -38,7 +38,7 @@ Describe the rules of scope in JavaScript.
 
 Your Answer:
 ```
-In javascript there are two general areas in terms of scope.  Global scope applies to variables that are declared outside of any function or variables that are declared without using the var keyword, even inside a function.  These variables are visible everywhere.  Local scope refers to variables inside functions.  Variables that declared inside a function cannot be accessed from outside of that function.  If there are nested functions, the inner function will have visibility of variables that are declared in the outer function, but the reverse is not true.  ```
+In javascript there are two general areas in terms of scope.  Global scope applies to variables that are declared outside of any function or variables that are declared without using the var keyword, even inside a function.  These variables are visible everywhere.  Local scope refers to variables inside functions.  Variables that declared inside a function cannot be accessed from outside of that function.  If there are nested functions, the inner function will have visibility of variables that are declared in the outer function, but the reverse is not true.  
 
 
 ### Question #4
