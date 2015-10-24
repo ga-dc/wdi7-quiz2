@@ -19,8 +19,9 @@ Your Answer:
 ```A clearfix is used to clean up the mess made by using floats. When floating
 elements the remaining white space that is available will be filled by the next
 element in the DOM. This could lead to undesired results. To fix this a clearfix
-adds the clear property to either left,right, or both sides of the floated
-element.
+class adds the clear property to both sides of the floated elements.
+
+Example : http://codepen.io/codedre/pen/GpxpyM
 ```
 
 ### Question #2
@@ -29,7 +30,7 @@ What does the following selector do?  `ul.dropdown > li`?
 
 Select 1:
 ```
-[] Selects all li's which are directly inside a ul of class dropdown (children)
+[X] Selects all li's which are directly inside a ul of class dropdown (children)
 [] Selects all li's which are anywhere inside a ul of class dropdown (any descendant)
 [] Selects all ul's of class dropdown, as well as the children elements that are li's
 [] Selects all ul's of class dropdown, only if their children are exclusively li's
