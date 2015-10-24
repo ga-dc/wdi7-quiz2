@@ -16,7 +16,11 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-```text
+```A clearfix is used to clean up the mess made by using floats. When floating
+elements the remaining white space that is available will be filled by the next
+element in the DOM. This could lead to undesired results. To fix this a clearfix
+adds the clear property to either left,right, or both sides of the floated
+element.
 ```
 
 ### Question #2
