@@ -43,7 +43,10 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-```text
+```Scope determines where you can use variables and functions. There is a global
+scope where all things defined can be used in other scopes. Scopes can only be
+created by functions. To store the current object to be used in another scope
+you have to bind the object or use "this" to reference the object.
 ```
 
 
