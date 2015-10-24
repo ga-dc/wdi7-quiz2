@@ -17,11 +17,15 @@ Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
 ```
-When child elements are floated, they are taken out of the normal flow of the document (and the container) and the containing element may "collapse" or have no height.
+When child elements are floated, they are taken out of the normal flow of the document
+(and the container) and the containing element may "collapse" or have no height.
 
-A clearfix is a way to prevent layout issues when a containing element has floated children without creating an empty <div> with the "clear:both" css property.
+A clearfix is a way to prevent layout issues when a containing element has floated
+children without creating an empty <div> with the "clear:both" css property.
 
-This problem can more elegantly be fixed by using the "clearfix" technique, which allows you to add a class (like "clear" or "clearfix") to the containing element. See an example of the CSS below:
+This problem can more elegantly be fixed by using the "clearfix" technique, which allows
+you to add a class (like "clear" or "clearfix") to the containing element. See an
+example of the CSS below:
 
 .clearfix:after {
   display: table;
