@@ -16,7 +16,9 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-```clearfix is a snippet of css code used to ensure that floated elements fit inside their parent element and do not extend past its borders when the browser renders the html.  clearfix css code can be copied and added to your css stylesheet.  you would then add the clearfix class to the parent element and its borders would extend to encompass all of its children.```   
+```
+clearfix is a snippet of css code used to ensure that floated elements fit inside their parent element and do not extend past its borders when the browser renders the html.  clearfix css code can be copied and added to your css stylesheet.  you would then add the clearfix class to the parent element and its borders would extend to encompass all of its children.
+```   
 
 ### Question #2
 
@@ -37,9 +39,10 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-```
-In javascript there are two general areas in terms of scope.  Global scope applies to variables that are declared outside of any function or variables that are declared without using the var keyword, even inside a function.  These variables are visible everywhere.  Local scope refers to variables inside functions.  Variables that declared inside a function cannot be accessed from outside of that function.  If there are nested functions, the inner function will have visibility of variables that are declared in the outer function, but the reverse is not true.  ```
 
+```
+In javascript there are two general areas in terms of scope.  Global scope applies to variables that are declared outside of any function or variables that are declared without using the var keyword, even inside a function.  These variables are visible everywhere.  Local scope refers to variables inside functions.  Variables that declared inside a function cannot be accessed from outside of that function.  If there are nested functions, the inner function will have visibility of variables that are declared in the outer function, but the reverse is not true.  
+```
 
 ### Question #4
 
