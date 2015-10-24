@@ -56,6 +56,7 @@ var pizza = {
     this.temperature = 300;
   }
 }
+```
 
 ## Callbacks
 
