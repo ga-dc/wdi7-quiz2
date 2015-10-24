@@ -16,7 +16,8 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-```A clearfix is used to clean up the mess made by using floats. When floating
+```text
+A clearfix is used to clean up the mess made by using floats. When floating
 elements the remaining white space that is available will be filled by the next
 element in the DOM. This could lead to undesired results. To fix this a clearfix
 class adds the clear property to both sides of the floated elements.
@@ -43,7 +44,8 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-```Scope determines where you can use variables and functions. There is a global
+```text
+Scope determines where you can use variables and functions. There is a global
 scope where all things defined can be used in other scopes. Scopes can only be
 created by functions. To store the current object to be used in another scope
 you have to bind the object or use "this" to reference the object.
@@ -59,7 +61,12 @@ the variable pizza inside your method.
 
 Your Answer:
 ```js
-// write code here
+var pizza = {
+  temperature: 70,
+  bake : function(){
+    this.temperature = 300;
+  }
+};
 ```
 
 ## Callbacks
