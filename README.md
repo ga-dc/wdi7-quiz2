@@ -80,15 +80,14 @@ argument. Finally, demonstrate calling `doSomething` with a function.**
 Your Answer:
 ```js
 function doSomething(thingToDo){
-  return function(this){
-    while (i < this) {
-      console.log("I was done " + i + " times");
-      i++;
-    }
-  }
+  return thingToDo();
 }
 
-doSomething(5);
+function thingToDo(){
+  alert("I was done");
+}
+
+doSomething(thingToDo);
 ```
 
 ### Question #6
