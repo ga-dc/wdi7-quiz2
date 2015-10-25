@@ -45,7 +45,7 @@ Describe the rules of scope in JavaScript.
 
 Your Answer:
 ```
-Scope describes all the variables you can access from a place in your code. If a variable is defined without the `var` keyword, it is a global variable that can be accessed from anywhere. Variables defined with the `var` keyword are in the local scope, that is they cannot be accessed from outside that scope. Functions create a new local scope, meaning that variables and operations declared inside functions cannot be accessed outside the scope of that function. This means that any variable not declared inside a function is considered a part of global scope, regardless of whether `var` is used. The scope of a spot in code includes any variables and functions declared in outer, containing scopes. It's like peeling the layers of an onion-- when you get to an inner layer, you also have access to all its outer layers.
+Scope describes all the variables you can access from a place in your code. If a variable is defined without the `var`\n keyword, it is a global variable that can be accessed from anywhere. Variables defined with the `var` keyword are in the\n local scope, that is they cannot be accessed from outside that scope. Functions create a new local scope, meaning that\n variables and operations declared inside functions cannot be accessed outside the scope of that function. This means that\n any variable not declared inside a function is considered a part of global scope, regardless of whether `var` is\n used. The scope of a spot in code includes any variables and functions declared in outer, containing scopes. It's like\n peeling the layers of an onion-- when you get to an inner layer, you also have access to all its outer layers.
 ```
 
 
