@@ -16,7 +16,7 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-```text
+```when one floats a child element in css if its parents height was dependent on the childs height, the parent element will no longer have a height, clearfix gives height to the parent element so it doesn't collapse. ex: .clearfix {}
 ```
 
 ### Question #2
@@ -26,7 +26,7 @@ What does the following selector do?  `ul.dropdown > li`?
 Select 1:
 ```
 [] Selects all li's which are directly inside a ul of class dropdown (children)
-[] Selects all li's which are anywhere inside a ul of class dropdown (any descendant)
+[X] Selects all li's which are anywhere inside a ul of class dropdown (any descendant)
 [] Selects all ul's of class dropdown, as well as the children elements that are li's
 [] Selects all ul's of class dropdown, only if their children are exclusively li's
 ```
@@ -38,7 +38,7 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-```text
+```In JavaScript there are global variables that can be used by all functions in the script.js file and local variables that can only be used by the functions in which they are defined. global variables are either declared as a "var___ = ..." outside of all functions or anything "___=..." qualifies as a global variable.  
 ```
 
 
@@ -51,7 +51,14 @@ the variable pizza inside your method.
 
 Your Answer:
 ```js
-// write code here
+var pizza = {
+  temperature: "70",
+  bake: function(){
+    this.temperature("300")
+  }
+};
+
+
 ```
 
 ## Callbacks
@@ -64,7 +71,11 @@ argument. Finally, demonstrate calling `doSomething` with a function.**
 
 Your Answer:
 ```js
-// write code here
+function doSomething(thingToDo){
+  var thingToDo =
+};
+
+doSomething();
 ```
 
 ### Question #6
@@ -75,7 +86,7 @@ Select all that apply:
 ```
 [] Synchronous code runs at an even pace, asynchronous code runs with uneven pacing.
 [] Synchronous code runs all at the same time, asynchronous code runs completely randomly
-[] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
+[X] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
 ```
 
 ## Git
@@ -87,9 +98,9 @@ Which of the following represents a correct workflow for submitting a PR on a no
 
 Select 1:
 ```
-[] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
+[X] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <ga_dc_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
-[] git clone <ga_dc_url>; git branch <charlie_solution>; git add <files>; git commit; git push; create pull request
+[X] git clone <ga_dc_url>; git branch <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git pull; create pull request
 ```
 
@@ -101,11 +112,11 @@ Which of the following statements will work, assuming jQuery is loaded?
 
 Select all that apply:
 ```
-[] `$(".post").css("background", "peachpuff")`
+[X] `$(".post").css("background", "peachpuff")`
 [] `$(".post").innerHTML`
-[] `$(".post").html()`
-[] `document.getElementsByClassName("post")[0].innerHTML`
-[] `document.getElementsByClassName("post").innerHTML`
+[X] `$(".post").html()`
+[X] `document.getElementsByClassName("post")[0].innerHTML`
+[X] `document.getElementsByClassName("post").innerHTML`
 ```
 
 ### Question #9
@@ -116,7 +127,9 @@ body, that says "hello".
 
 Your Answer:
 ```js
-// your code here
+$("#greeting").on("click", function(){
+$("body").append('<p>"hello"</p>')
+});
 ```
 
 ## Software Development Processes
@@ -131,5 +144,5 @@ role, goal, and reason for each.
 Finally, link to your repo on github in the space below.
 
 Your Answer:
-```text
+```https://github.com/alifrumin/Project1
 ```
