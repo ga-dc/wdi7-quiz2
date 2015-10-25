@@ -151,5 +151,4 @@ role, goal, and reason for each.
 Finally, link to your repo on github in the space below.
 
 Your Answer:
-```https://github.com/KoryJCampbell/project1
-```
+https://github.com/KoryJCampbell/project1
