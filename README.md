@@ -16,8 +16,27 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-```text
-```
+When you float an element in CSS, its neighboring elements ignore it, which can throw their positioning off. For example, if you float an image that is inside a container, the container won't care that it's supposed to be containing the image, and instead change to whatever size it needs to be to contain any non-floating elements. Styling the container element with clearfix code stops this from happening.
+
+Example HTML:
+	<div id="container" class="cf">
+	  <img src="my-floating-image.gif" alt="Floaties"> 
+	</div>
+
+Example CSS:
+	img {
+		float: left;
+	}
+
+	.cf:before,
+	.cf:after {
+	    content: ""; 
+	    display: table; 
+	}
+
+	.cf:after {
+	    clear: both;
+	}
 
 ### Question #2
 
@@ -25,7 +44,7 @@ What does the following selector do?  `ul.dropdown > li`?
 
 Select 1:
 ```
-[] Selects all li's which are directly inside a ul of class dropdown (children)
+[x] Selects all li's which are directly inside a ul of class dropdown (children)
 [] Selects all li's which are anywhere inside a ul of class dropdown (any descendant)
 [] Selects all ul's of class dropdown, as well as the children elements that are li's
 [] Selects all ul's of class dropdown, only if their children are exclusively li's
@@ -38,8 +57,11 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-```text
-```
+Any variable declared without the keyword "var" in front of it is global, even if it's within a function. Otherwise, a variable will be created within the local scope in which it was declared. If a variable is defined outside a function, its scope will be global. If it's defined within a function, its scope will be local, and you will only be able to access it from inside the function (unless you return it).
+
+Functions can access all global variables, but when you're outside the function, you can't access its local variables. A function also can't access the local variables of a separate function. A function within a function can access the local variables of its "parent" function, but the parent function can't access the local variables of its "child."
+
+Any parameter in a function is a local variable, for the function its passed in to.
 
 
 ### Question #4
@@ -50,9 +72,12 @@ this method should set the pizza's temperature to be 300. Note: you may not use
 the variable pizza inside your method.
 
 Your Answer:
-```js
-// write code here
-```
+var pizza = {
+	temperature: 70,
+	bake: function() {
+		this.temperature = 300;
+	}
+}
 
 ## Callbacks
 
@@ -63,9 +88,11 @@ Your Answer:
 argument. Finally, demonstrate calling `doSomething` with a function.**
 
 Your Answer:
-```js
-// write code here
-```
+function doSomething(thingToDo) {
+	thingToDo();
+}
+
+doSomething(thingToDo);	// I'm assuming thingToDo() was defined elsewhere in the code.
 
 ### Question #6
 
@@ -75,7 +102,7 @@ Select all that apply:
 ```
 [] Synchronous code runs at an even pace, asynchronous code runs with uneven pacing.
 [] Synchronous code runs all at the same time, asynchronous code runs completely randomly
-[] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
+[x] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
 ```
 
 ## Git
@@ -87,7 +114,7 @@ Which of the following represents a correct workflow for submitting a PR on a no
 
 Select 1:
 ```
-[] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
+[x] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <ga_dc_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] git clone <ga_dc_url>; git branch <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git pull; create pull request
@@ -101,10 +128,10 @@ Which of the following statements will work, assuming jQuery is loaded?
 
 Select all that apply:
 ```
-[] `$(".post").css("background", "peachpuff")`
+[x] `$(".post").css("background", "peachpuff")`
 [] `$(".post").innerHTML`
-[] `$(".post").html()`
-[] `document.getElementsByClassName("post")[0].innerHTML`
+[x] `$(".post").html()`
+[x] `document.getElementsByClassName("post")[0].innerHTML`
 [] `document.getElementsByClassName("post").innerHTML`
 ```
 
@@ -115,9 +142,9 @@ Using jQuery, add an event listener for clicks on the button with the id
 body, that says "hello".
 
 Your Answer:
-```js
-// your code here
-```
+$("#greeting").on("click", function {
+	$("body").append("<p>Hello</p>");
+})
 
 ## Software Development Processes
 
@@ -131,5 +158,4 @@ role, goal, and reason for each.
 Finally, link to your repo on github in the space below.
 
 Your Answer:
-```text
-```
+https://github.com/rebeccaestes/project1/blob/master/README.md
