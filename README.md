@@ -147,6 +147,6 @@ role, goal, and reason for each.
 Finally, link to your repo on github in the space below.
 
 Your Answer:
-```html
-<a href="https://github.com/ddayporter/Project1">my project repo</a>
+```
+https://github.com/ddayporter/Project1">my project repo
 ```
