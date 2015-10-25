@@ -16,7 +16,20 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-```text
+```
+The purpose of a clearfix is for an element to clear the child elements - it was created as a way to reduce the need for additional markup. 
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+<div class="clearfix">
+
 ```
 
 ### Question #2
@@ -25,10 +38,10 @@ What does the following selector do?  `ul.dropdown > li`?
 
 Select 1:
 ```
-[] Selects all li's which are directly inside a ul of class dropdown (children)
+[x] Selects all li's which are directly inside a ul of class dropdown (children)
 [] Selects all li's which are anywhere inside a ul of class dropdown (any descendant)
 [] Selects all ul's of class dropdown, as well as the children elements that are li's
-[] Selects all ul's of class dropdown, only if their children are exclusively li's
+[x] Selects all ul's of class dropdown, only if their children are exclusively li's
 ```
 
 ## Scope/Context/Closures
@@ -38,7 +51,8 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-```text
+```
+Scope refers to where a variable exists and how it can be referenced. Variables  that don't include "var" preceeding the variable name are automatically placed in the global scope. Variables with the "var" precedent are part of the local scope. Only a function creates a new scope. The innermost scope includes all scopes within which it is contained. 
 ```
 
 
@@ -50,8 +64,17 @@ this method should set the pizza's temperature to be 300. Note: you may not use
 the variable pizza inside your method.
 
 Your Answer:
-```js
-// write code here
+```
+var pizza = {
+    temp : 70,
+    function bake() {
+        for (var i = 0; i <= 300; i++) {
+        i = temp;
+        }
+    }
+    bake();
+}
+
 ```
 
 ## Callbacks
@@ -64,7 +87,12 @@ argument. Finally, demonstrate calling `doSomething` with a function.**
 
 Your Answer:
 ```js
-// write code here
+function doSomething(thingToDo) {
+ console.log(thingToDo);
+}
+
+doSomething("print this");
+    
 ```
 
 ### Question #6
@@ -75,7 +103,7 @@ Select all that apply:
 ```
 [] Synchronous code runs at an even pace, asynchronous code runs with uneven pacing.
 [] Synchronous code runs all at the same time, asynchronous code runs completely randomly
-[] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
+[x] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
 ```
 
 ## Git
@@ -87,7 +115,7 @@ Which of the following represents a correct workflow for submitting a PR on a no
 
 Select 1:
 ```
-[] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
+[x] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <ga_dc_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] git clone <ga_dc_url>; git branch <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git pull; create pull request
@@ -101,11 +129,11 @@ Which of the following statements will work, assuming jQuery is loaded?
 
 Select all that apply:
 ```
-[] `$(".post").css("background", "peachpuff")`
+[x] `$(".post").css("background", "peachpuff")`
 [] `$(".post").innerHTML`
-[] `$(".post").html()`
+[x] `$(".post").html()`
 [] `document.getElementsByClassName("post")[0].innerHTML`
-[] `document.getElementsByClassName("post").innerHTML`
+[x] `document.getElementsByClassName("post").innerHTML`
 ```
 
 ### Question #9
@@ -116,7 +144,9 @@ body, that says "hello".
 
 Your Answer:
 ```js
-// your code here
+$("#greet").on("click", function () {
+    $("body").append("hello");
+})
 ```
 
 ## Software Development Processes
@@ -131,5 +161,5 @@ role, goal, and reason for each.
 Finally, link to your repo on github in the space below.
 
 Your Answer:
-```text
+```https://github.com/jenpen/flashcards
 ```
