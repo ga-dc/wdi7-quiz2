@@ -1,7 +1,18 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
 <body>
-<h1 class=post>HI</h1>
-<h1 class=post>HI</h1>
+  <body>
+  <button id=greeting> push me</button>
 </body>
 
+</html>
+
 <script src='https://code.jquery.com/jquery-2.1.4.js'></script>
+<script>
+$('#greeting').on('click', function(){
+  $('<p>hello</p>').appendTo($('body'))
+})
+</script>

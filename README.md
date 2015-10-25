@@ -82,8 +82,9 @@ function doSomthing(thingToDo) {
   thingToDo('it works')
 }
 doSomthing(createAlert)
+
+```
 -->
-<!--
 
 ### Question #6
 
@@ -128,14 +129,21 @@ Select all that apply:
 
 ### Question #9
 
-Using jQuery, add an event listener for clicks on the button with the id
+**Using jQuery, add an event listener for clicks on the button with the id
 'greeting'. When the event happens, the code should append a paragraph to the
-body, that says "hello".
+body, that says "hello".**
 
 Your Answer:
 ```js
-// your code here
+write code here
+
+<button id=greeting>push me</button>
+
+$('#greeting').on('click', function(){
+  $('<p>hello</p>').appendTo($('body'))
+})
 ```
+-->
 
 ## Software Development Processes
 
@@ -149,5 +157,5 @@ role, goal, and reason for each.
 Finally, link to your repo on github in the space below.
 
 Your Answer:
-```text
+```https://github.com/ascreven/Guess-the-Location
 ```
