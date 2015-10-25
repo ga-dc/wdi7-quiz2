@@ -16,7 +16,8 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-```The clearfix is basically an "end float" property, so when you have something floated in the container, it doesn't mess with the formatting of other elements in the container. For example, you could use "clear: left" as a property of an ordered or unordered list after a floated image, to be sure the bullets are aligned properly and not floating.
+```text
+The clearfix is basically an "end float" property, so when you have something floated in the container, it doesn't mess with the formatting of other elements in the container. For example, you could use "clear: left" as a property of an ordered or unordered list after a floated image, to be sure the bullets are aligned properly and not floating.
 ```
 
 ### Question #2
@@ -38,7 +39,8 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-```There's global scope and local scope. Everything outside of a function is in the global scope, and only functions can create local scope. Variables defined in the global scope can be accessed inside a function, but variables defined inside a function cannot be accessed in the global scope, or in another function outside function where variable was defined.
+```text
+There's global scope and local scope. Everything outside of a function is in the global scope, and only functions can create local scope. Variables defined in the global scope can be accessed inside a function, but variables defined inside a function cannot be accessed in the global scope, or in another function outside function where variable was defined.
 ```
 
 
@@ -145,5 +147,6 @@ role, goal, and reason for each.
 Finally, link to your repo on github in the space below.
 
 Your Answer:
-```https://github.com/ddayporter/Project1
+```text
+<a href="https://github.com/ddayporter/Project1">my project repo</a>
 ```
