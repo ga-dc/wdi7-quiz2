@@ -66,7 +66,7 @@ Your Answer:
 var pizza {
   temperature: 70,
   bake: function() {
-    var setTemperature = 300;
+    temperature = 300;
   };
 }
 ```
