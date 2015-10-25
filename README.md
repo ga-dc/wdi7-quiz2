@@ -16,7 +16,20 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-```text
+```
+The purpose of a clearfix is for an element to clear the child elements - it was created as a way to reduce the need for additional markup. 
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+<div class="clearfix">
+
 ```
 
 ### Question #2
