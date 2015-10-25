@@ -16,9 +16,9 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-```
 When you float an element in CSS, its neighboring elements ignore it, which can throw their positioning off. For example, if you float an image that is inside a container, the container won't care that it's supposed to be containing the image, and instead change to whatever size it needs to be to contain any non-floating elements. Styling the container element with clearfix code stops this from happening.
 
+```
 Example HTML:
 	<div id="container" class="cf">
 	  <img src="my-floating-image.gif" alt="Floaties"> 
@@ -59,13 +59,13 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-```
+
 Any variable declared without the keyword "var" in front of it is global, even if it's within a function. Otherwise, a variable will be created within the local scope in which it was declared. If a variable is defined outside a function, its scope will be global. If it's defined within a function, its scope will be local, and you will only be able to access it from inside the function (unless you return it).
 
 Functions can access all global variables, but when you're outside the function, you can't access its local variables. A function also can't access the local variables of a separate function. A function within a function can access the local variables of its "parent" function, but the parent function can't access the local variables of its "child."
 
 Any parameter in a function is a local variable, for the function its passed in to.
-```
+
 
 ### Question #4
 
