@@ -64,8 +64,17 @@ this method should set the pizza's temperature to be 300. Note: you may not use
 the variable pizza inside your method.
 
 Your Answer:
-```js
-// write code here
+```
+var pizza = {
+    temp : 70,
+    function bake() {
+        for (var i = 0; i <= 300; i++) {
+        i = temp;
+        }
+    }
+    bake();
+}
+
 ```
 
 ## Callbacks
