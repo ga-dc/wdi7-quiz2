@@ -51,7 +51,8 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-```text
+```
+Scope refers to where a variable exists and how it can be referenced. Variables  that don't include "var" preceeding the variable name are automatically placed in the global scope. Variables with the "var" precedent are part of the local scope. Only a function creates a new scope. The innermost scope includes all scopes within which it is contained. 
 ```
 
 
