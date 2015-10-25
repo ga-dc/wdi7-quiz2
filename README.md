@@ -87,7 +87,12 @@ argument. Finally, demonstrate calling `doSomething` with a function.**
 
 Your Answer:
 ```js
-// write code here
+function doSomething(thingToDo) {
+ console.log(thingToDo);
+}
+
+doSomething("print this");
+    
 ```
 
 ### Question #6
