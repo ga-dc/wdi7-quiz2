@@ -16,7 +16,7 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-A clearfix forces a parent element to contain floated children. It can be done by adding a `.clearfix` class with an `:after` pseudoclass to the container element, like this:
+A clearfix forces a parent element to contain floated children. It can be done by adding a `.clearfix` class with an `:after` pseudo-element to the container element, like this:
 ```.clearfix:after{
   display:block;
   clear:both;
@@ -42,7 +42,7 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-```text
+```Scope describes all the variables you can access from a place in your code. If a variable is defined without the `var` keyword, it is a global variable that can be accessed from anywhere. Variables defined with the `var` keyword are in the local scope, that is they cannot be accessed from outside that scope. Functions create a new local scope, meaning that variables and operations declared inside functions cannot be accessed outside the scope of that function. This means that any variable not declared inside a function is considered a part of global scope, regardless of whether `var` is used. The scope of a spot in code includes any variables and functions declared in outer, containing scopes. It's like peeling the layers of an onion-- when you get to an inner layer, you also have access to all its outer layers.
 ```
 
 
@@ -74,10 +74,12 @@ argument. Finally, demonstrate calling `doSomething` with a function.**
 Your Answer:
 ```js
 function doSomething(thingToDo){
-  return function(){
-    console.log('huh?');
-  }
+  thingToDo();
 }
+function imSomething(){
+  console.log('helloooooo');
+}
+doSomething(imSomething);
 ```
 
 ### Question #6
@@ -146,5 +148,5 @@ role, goal, and reason for each.
 Finally, link to your repo on github in the space below.
 
 Your Answer:
-```text
+```https://github.com/cpgruber/wdi-project1
 ```
