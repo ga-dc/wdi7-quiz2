@@ -38,7 +38,8 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-```A variable created in the global space, no matter if you use 'var' will be a global variable. A variable created inside a function without 'var' will be global, and local only if 'var' is used. Global variables can be accessed anywhere, where as local variables can only be accessed within the function it was declared (as well as any functions nested within it)
+```
+A variable created in the global space, no matter if you use 'var' will be a global variable. A variable created inside a function without 'var' will be global, and local only if 'var' is used. Global variables can be accessed anywhere, where as local variables can only be accessed within the function it was declared (as well as any functions nested within it)
 ```
 
 
@@ -145,5 +146,6 @@ role, goal, and reason for each.
 Finally, link to your repo on github in the space below.
 
 Your Answer:
-```https://github.com/jordanbrauner/Project-1
+```
+// https://github.com/jordanbrauner/Project-1
 ```
