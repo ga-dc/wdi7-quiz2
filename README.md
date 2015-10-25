@@ -16,7 +16,12 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-```text
+```The purpose of clearfix is CSS is a way way for elements to clear its children elements.
+ex. .clearfix:after {
+  border: 100px;
+  background-color: red;
+}
+};
 ```
 
 ### Question #2
@@ -28,7 +33,7 @@ Select 1:
 [] Selects all li's which are directly inside a ul of class dropdown (children)
 [] Selects all li's which are anywhere inside a ul of class dropdown (any descendant)
 [] Selects all ul's of class dropdown, as well as the children elements that are li's
-[] Selects all ul's of class dropdown, only if their children are exclusively li's
+[x] Selects all ul's of class dropdown, only if their children are exclusively li's
 ```
 
 ## Scope/Context/Closures
@@ -38,7 +43,14 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-```text
+```Scope is where a variable can be refrenced. ex.
+var color = blue
+
+function {
+  return color;
+};
+
+the variable [color] is in global scope. and within the function, it's scope is local to the function.
 ```
 
 
@@ -51,7 +63,12 @@ the variable pizza inside your method.
 
 Your Answer:
 ```js
-// write code here
+var pizza {
+  temperature: 70,
+  bake: function() {
+    temperature = 300;
+  };
+}
 ```
 
 ## Callbacks
@@ -64,7 +81,10 @@ argument. Finally, demonstrate calling `doSomething` with a function.**
 
 Your Answer:
 ```js
-// write code here
+function doSomething(thingToDo) {
+  return thingToDo;
+};
+function doSomething(makePizza) ;
 ```
 
 ### Question #6
@@ -75,7 +95,7 @@ Select all that apply:
 ```
 [] Synchronous code runs at an even pace, asynchronous code runs with uneven pacing.
 [] Synchronous code runs all at the same time, asynchronous code runs completely randomly
-[] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
+[x] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
 ```
 
 ## Git
@@ -87,7 +107,7 @@ Which of the following represents a correct workflow for submitting a PR on a no
 
 Select 1:
 ```
-[] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
+[x] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <ga_dc_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] git clone <ga_dc_url>; git branch <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git pull; create pull request
@@ -103,7 +123,7 @@ Select all that apply:
 ```
 [] `$(".post").css("background", "peachpuff")`
 [] `$(".post").innerHTML`
-[] `$(".post").html()`
+[x] `$(".post").html()`
 [] `document.getElementsByClassName("post")[0].innerHTML`
 [] `document.getElementsByClassName("post").innerHTML`
 ```
@@ -116,7 +136,7 @@ body, that says "hello".
 
 Your Answer:
 ```js
-// your code here
+  $(".greeting").on("click").append(<p>"hello"</p>);  
 ```
 
 ## Software Development Processes
@@ -131,5 +151,4 @@ role, goal, and reason for each.
 Finally, link to your repo on github in the space below.
 
 Your Answer:
-```text
-```
+https://github.com/KoryJCampbell/project1
