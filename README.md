@@ -22,7 +22,8 @@ A clearfix forces a parent element to contain floated children. It can be done b
   display:block;
   clear:both;
   content:'';
-}```
+}
+```
 
 ### Question #2
 
