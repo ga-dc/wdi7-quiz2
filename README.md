@@ -97,9 +97,9 @@ Your Answer:
 function doSomething(thingToDo) {
 	thingToDo();
 }
-```
 
 doSomething(thingToDo);	// I'm assuming thingToDo() was defined elsewhere in the code.
+```
 
 ### Question #6
 
