@@ -16,7 +16,24 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-```text
+```The purpose of a clearfix in CSS is to "clear" a float that is in a container. If a border is applied to the containter the float will often hang down below and the border will not go around it. The clearfix fixs this and makes the border go around the float.
+Found the clearfix on CSS tricks..
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+Apply the clear fix to the parent container element.
+
 ```
 
 ### Question #2
