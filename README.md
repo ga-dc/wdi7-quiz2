@@ -148,5 +148,5 @@ Finally, link to your repo on github in the space below.
 
 Your Answer:
 ```
-https://github.com/ddayporter/Project1">my project repo
+https://github.com/ddayporter/Project1
 ```
