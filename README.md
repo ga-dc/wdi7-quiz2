@@ -23,10 +23,16 @@ Your Answer:
     <div class="sidebar">Sidebar stuff...</div>
 </div>
 
-<div class="container clearfix">
-    <div class="content">other content stuff...</div>
-    <div class="sidebar">Sidebar stuff...</div>
-</div>
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+
 
 
 
