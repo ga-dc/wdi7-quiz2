@@ -16,8 +16,11 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-```text
-```
+```The clearfix hack is a popular way to contain floats without resorting to using presentational markup.
+```<div class="clearfix">
+    <div style="float: left;" class="clearfix">Sidebar</div>
+
+</div>
 
 ### Question #2
 
@@ -25,9 +28,9 @@ What does the following selector do?  `ul.dropdown > li`?
 
 Select 1:
 ```
-[] Selects all li's which are directly inside a ul of class dropdown (children)
+[x] Selects all li's which are directly inside a ul of class dropdown (children)
 [] Selects all li's which are anywhere inside a ul of class dropdown (any descendant)
-[] Selects all ul's of class dropdown, as well as the children elements that are li's
+[x] Selects all ul's of class dropdown, as well as the children elements that are li's
 [] Selects all ul's of class dropdown, only if their children are exclusively li's
 ```
 
@@ -38,7 +41,7 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-```text
+```Local variables defined inside a function cannot be accessed from anywhere outside the function, because the variable is defined only in the scope of the function. However, a function can access all variables and functions defined inside the scope in which it is defined.
 ```
 
 
@@ -50,8 +53,12 @@ this method should set the pizza's temperature to be 300. Note: you may not use
 the variable pizza inside your method.
 
 Your Answer:
-```js
-// write code here
+var pizza = {
+ temperature: 70,
+ bake: function() {
+   this.temperature = 300;
+ }
+};
 ```
 
 ## Callbacks
@@ -64,8 +71,10 @@ argument. Finally, demonstrate calling `doSomething` with a function.**
 
 Your Answer:
 ```js
-// write code here
-```
+function doSomething(thingToDo) {
+  thingToDo.preventDefault
+})
+$('doSomething')
 
 ### Question #6
 
@@ -73,7 +82,7 @@ Your Answer:
 
 Select all that apply:
 ```
-[] Synchronous code runs at an even pace, asynchronous code runs with uneven pacing.
+[x] Synchronous code runs at an even pace, asynchronous code runs with uneven pacing.
 [] Synchronous code runs all at the same time, asynchronous code runs completely randomly
 [] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
 ```
@@ -87,7 +96,7 @@ Which of the following represents a correct workflow for submitting a PR on a no
 
 Select 1:
 ```
-[] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
+[x] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <ga_dc_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] git clone <ga_dc_url>; git branch <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git pull; create pull request
@@ -101,9 +110,9 @@ Which of the following statements will work, assuming jQuery is loaded?
 
 Select all that apply:
 ```
-[] `$(".post").css("background", "peachpuff")`
+[x] `$(".post").css("background", "peachpuff")`
 [] `$(".post").innerHTML`
-[] `$(".post").html()`
+[x] `$(".post").html()`
 [] `document.getElementsByClassName("post")[0].innerHTML`
 [] `document.getElementsByClassName("post").innerHTML`
 ```
@@ -116,7 +125,9 @@ body, that says "hello".
 
 Your Answer:
 ```js
-// your code here
+  $("#greeting").on("click", function(){
+      $(this).appendTo("<p>Hello</p>")
+})
 ```
 
 ## Software Development Processes
