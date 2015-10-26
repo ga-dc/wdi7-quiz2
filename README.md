@@ -16,7 +16,7 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-```text
+```Floated elements can vertically overflow their containers by default. To force their containers to adjust to an element's size instead, you can use an :after pseudoselector to insert a blank string after each instance of the element, which the container will stretch to wrap around.
 ```
 
 ### Question #2
