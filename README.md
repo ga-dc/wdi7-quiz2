@@ -14,10 +14,21 @@ the square brackets (for multiple-choice questions).
 ### Question #1
 
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
-
 Your Answer:
-```text
-```
+
+- A clearfix is a way for an element to automatically clear its child elements, so that you don't need to add additional markup.
+
+<div class="container clearfix">
+    <div class="content">other content stuff...</div>
+    <div class="sidebar">Sidebar stuff...</div>
+</div>
+
+<div class="container clearfix">
+    <div class="content">other content stuff...</div>
+    <div class="sidebar">Sidebar stuff...</div>
+</div>
+
+
 
 ### Question #2
 
@@ -25,7 +36,7 @@ What does the following selector do?  `ul.dropdown > li`?
 
 Select 1:
 ```
-[] Selects all li's which are directly inside a ul of class dropdown (children)
+[X] Selects all li's which are directly inside a ul of class dropdown (children)
 [] Selects all li's which are anywhere inside a ul of class dropdown (any descendant)
 [] Selects all ul's of class dropdown, as well as the children elements that are li's
 [] Selects all ul's of class dropdown, only if their children are exclusively li's
@@ -38,9 +49,7 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-```text
-```
-
+Scope refers to where variables and functions are accessible, and in what context it is being executed. Basically, a variable or function can be defined in a global or local scope. Variables have so-called function scope, and functions have the same scope as variables.
 
 ### Question #4
 
@@ -50,11 +59,20 @@ this method should set the pizza's temperature to be 300. Note: you may not use
 the variable pizza inside your method.
 
 Your Answer:
-```js
-// write code here
+```
+var pizza = {
+  temperature: 70,
+  bake: function(){
+    this.temperature = 300;
+    console.log( this );
+  }
+}
+pizza.bake();
+
 ```
 
 ## Callbacks
+
 
 ### Question #5
 
@@ -64,7 +82,12 @@ argument. Finally, demonstrate calling `doSomething` with a function.**
 
 Your Answer:
 ```js
-// write code here
+function doSomething (thingToDo, upper ) {
+	var a = Math.floor(Math.random() * upper ) + 1;
+	return a;
+}
+doSomething();
+
 ```
 
 ### Question #6
@@ -75,7 +98,7 @@ Select all that apply:
 ```
 [] Synchronous code runs at an even pace, asynchronous code runs with uneven pacing.
 [] Synchronous code runs all at the same time, asynchronous code runs completely randomly
-[] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
+[X] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
 ```
 
 ## Git
@@ -87,7 +110,7 @@ Which of the following represents a correct workflow for submitting a PR on a no
 
 Select 1:
 ```
-[] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
+[X] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <ga_dc_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] git clone <ga_dc_url>; git branch <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git pull; create pull request
@@ -104,7 +127,7 @@ Select all that apply:
 [] `$(".post").css("background", "peachpuff")`
 [] `$(".post").innerHTML`
 [] `$(".post").html()`
-[] `document.getElementsByClassName("post")[0].innerHTML`
+[X] `document.getElementsByClassName("post")[0].innerHTML`
 [] `document.getElementsByClassName("post").innerHTML`
 ```
 
@@ -117,6 +140,10 @@ body, that says "hello".
 Your Answer:
 ```js
 // your code here
+$("#greeting").on("click", appendBody);
+function appendBody(){
+ $("body").append("<p>Hello</p>");
+}
 ```
 
 ## Software Development Processes
@@ -131,5 +158,5 @@ role, goal, and reason for each.
 Finally, link to your repo on github in the space below.
 
 Your Answer:
-```text
+```   https://github.com/jotalp/emtpyrepo
 ```
