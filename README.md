@@ -16,7 +16,27 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-```text
+```When you float an element, other elements will wrap around it, especially text. If you'd like to separate the floated element so that it has it's own line and nothing wraps around it you can use clearfix. This is one of a couple clean ways to clear the element.
+
+You would add the following css code for clearfix:
+
+.cf:before,
+.cf:after {
+    content: "Example text"; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
 ```
 
 ### Question #2
@@ -25,7 +45,7 @@ What does the following selector do?  `ul.dropdown > li`?
 
 Select 1:
 ```
-[] Selects all li's which are directly inside a ul of class dropdown (children)
+[X] Selects all li's which are directly inside a ul of class dropdown (children)
 [] Selects all li's which are anywhere inside a ul of class dropdown (any descendant)
 [] Selects all ul's of class dropdown, as well as the children elements that are li's
 [] Selects all ul's of class dropdown, only if their children are exclusively li's
@@ -38,7 +58,10 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-```text
+```
+Global variables can be created anywhere if var is not included when they are declared. They can also be created with var as long as it is outside of all functions. Global variables have global scope, so they can be called anywhere in a program.
+
+Local variables are created with var and are created inside of a function. They can be used within that function, but can't be called on from outside of that function since their scope is local. However, a function can call on variables outside of its function as long as it's within its scope.  
 ```
 
 
@@ -51,7 +74,10 @@ the variable pizza inside your method.
 
 Your Answer:
 ```js
-// write code here
+var pizza = {
+  temperature: 70,
+  bake: this.temperature = 300;
+}
 ```
 
 ## Callbacks
@@ -64,7 +90,12 @@ argument. Finally, demonstrate calling `doSomething` with a function.**
 
 Your Answer:
 ```js
-// write code here
+function doSomething(thingToDo) {
+thingToDo
+}
+
+doSomething();
+
 ```
 
 ### Question #6
@@ -75,7 +106,7 @@ Select all that apply:
 ```
 [] Synchronous code runs at an even pace, asynchronous code runs with uneven pacing.
 [] Synchronous code runs all at the same time, asynchronous code runs completely randomly
-[] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
+[X] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
 ```
 
 ## Git
@@ -87,7 +118,7 @@ Which of the following represents a correct workflow for submitting a PR on a no
 
 Select 1:
 ```
-[] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
+[X] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <ga_dc_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] git clone <ga_dc_url>; git branch <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git pull; create pull request
@@ -101,10 +132,10 @@ Which of the following statements will work, assuming jQuery is loaded?
 
 Select all that apply:
 ```
-[] `$(".post").css("background", "peachpuff")`
+[X] `$(".post").css("background", "peachpuff")`
 [] `$(".post").innerHTML`
-[] `$(".post").html()`
-[] `document.getElementsByClassName("post")[0].innerHTML`
+[X] `$(".post").html()`
+[X] `document.getElementsByClassName("post")[0].innerHTML`
 [] `document.getElementsByClassName("post").innerHTML`
 ```
 
@@ -116,7 +147,9 @@ body, that says "hello".
 
 Your Answer:
 ```js
-// your code here
+$("#greeting").on("click", function() {
+  $("body").append("<p>hello</p>");
+})
 ```
 
 ## Software Development Processes
@@ -131,5 +164,5 @@ role, goal, and reason for each.
 Finally, link to your repo on github in the space below.
 
 Your Answer:
-```text
+```https://github.com/jacohen10/project1
 ```
