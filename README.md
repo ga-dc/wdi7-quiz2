@@ -16,7 +16,23 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-```text
+```
+A clearfix (created by Nicholas Gallagher) uses the pseudo-classes ::before and ::after to resize a container element that has a float attribute so that it will fit its children elements without inserting messier empty div containers.
+
+Example:
+
+//in CSS file:
+.clearfix {
+  overflow:auto;
+}
+
+//in HTML will show:
+<div class = "clearfix">
+::before
+<div></div>
+::after
+</div>
+
 ```
 
 ### Question #2
@@ -25,7 +41,7 @@ What does the following selector do?  `ul.dropdown > li`?
 
 Select 1:
 ```
-[] Selects all li's which are directly inside a ul of class dropdown (children)
+[x] Selects all li's which are directly inside a ul of class dropdown (children)
 [] Selects all li's which are anywhere inside a ul of class dropdown (any descendant)
 [] Selects all ul's of class dropdown, as well as the children elements that are li's
 [] Selects all ul's of class dropdown, only if their children are exclusively li's
@@ -38,7 +54,11 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-```text
+```
+There are 2 types of scope: global and local. Global scope applies to the entire document, whereas a local scope is created by functions.
+A variable that is declared without `var` (e.g. `x = 10` vs. `var x = 10`) will have a global scope, whereas variables with `var` will be in the local scope of that given function.
+
+So, if function A is inside of function B, which is inside of function C, the scope of function C applies to functions A and B, the scope of function B applies to function A, but the scope of function A only applies to function A.
 ```
 
 
@@ -50,8 +70,13 @@ this method should set the pizza's temperature to be 300. Note: you may not use
 the variable pizza inside your method.
 
 Your Answer:
-```js
-// write code here
+```
+var pizza = {
+  temperature: 70;
+  bake: function(){
+    this.temperature = 300;
+  }
+}
 ```
 
 ## Callbacks
@@ -64,7 +89,14 @@ argument. Finally, demonstrate calling `doSomething` with a function.**
 
 Your Answer:
 ```js
-// write code here
+var doSomething = function(thingToDo) {
+  return thingToDo;
+}
+
+function(){
+  doSomething()
+}
+;
 ```
 
 ### Question #6
@@ -75,7 +107,7 @@ Select all that apply:
 ```
 [] Synchronous code runs at an even pace, asynchronous code runs with uneven pacing.
 [] Synchronous code runs all at the same time, asynchronous code runs completely randomly
-[] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
+[x] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
 ```
 
 ## Git
@@ -87,7 +119,7 @@ Which of the following represents a correct workflow for submitting a PR on a no
 
 Select 1:
 ```
-[] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
+[x] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <ga_dc_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] git clone <ga_dc_url>; git branch <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git pull; create pull request
@@ -101,10 +133,10 @@ Which of the following statements will work, assuming jQuery is loaded?
 
 Select all that apply:
 ```
-[] `$(".post").css("background", "peachpuff")`
+[x] `$(".post").css("background", "peachpuff")`
 [] `$(".post").innerHTML`
-[] `$(".post").html()`
-[] `document.getElementsByClassName("post")[0].innerHTML`
+[x] `$(".post").html()`
+[x] `document.getElementsByClassName("post")[0].innerHTML`
 [] `document.getElementsByClassName("post").innerHTML`
 ```
 
@@ -115,8 +147,10 @@ Using jQuery, add an event listener for clicks on the button with the id
 body, that says "hello".
 
 Your Answer:
-```js
-// your code here
+```
+$('#greeting').on("click", function(){
+  $(body).append("<p>hello</p>")
+}
 ```
 
 ## Software Development Processes
@@ -131,5 +165,6 @@ role, goal, and reason for each.
 Finally, link to your repo on github in the space below.
 
 Your Answer:
-```text
+```
+https://github.com/starrchen/Project-1
 ```
