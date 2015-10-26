@@ -16,8 +16,7 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-```text
-```
+```In CSS, when an element is floated inside another element, the floated element may flow outside its parent container. The clearfix allows for the parent element to automatically clear its child elements. In class, we learned that it strategically places empty strings surrounding the floated element so that the parent container wraps around it nicely. The code for clearfix can be found online by googling. You place this in your CSS and call the clearfix class in your HTML for the element that you want to use it for.```    
 
 ### Question #2
 
@@ -29,6 +28,7 @@ Select 1:
 [] Selects all li's which are anywhere inside a ul of class dropdown (any descendant)
 [] Selects all ul's of class dropdown, as well as the children elements that are li's
 [] Selects all ul's of class dropdown, only if their children are exclusively li's
+[X] None of the above: Selects only li's that are direct children of all ul's of class "dropdown."
 ```
 
 ## Scope/Context/Closures
@@ -38,7 +38,7 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-```text
+```There is global scope and local scope. It lets you know where a variable, object, or function is accessible. For example, global variables are accessible in all functions and objects throughout the document. Local variables are only accessible within their functions. If there are nested functions, local variables outside of the that scope will be accessible by functions inside. However, the innermost local variables would not be accessible outside of that scope. To make a local variable, you declare it with "var." Variables not declared with "var" will automatically be a global variable. Any variables, declared with var or not, outside of all functions and in the global scope will automatically be global variables.
 ```
 
 
@@ -51,7 +51,12 @@ the variable pizza inside your method.
 
 Your Answer:
 ```js
-// write code here
+var pizza = {
+  temperature: 70,
+  bake: function () {
+    this.temperature = 300;
+  };   
+}
 ```
 
 ## Callbacks
@@ -64,7 +69,15 @@ argument. Finally, demonstrate calling `doSomething` with a function.**
 
 Your Answer:
 ```js
-// write code here
+function doSomething (thingToDo) {
+  return 7 x thingToDo;
+
+}
+
+function thingToDo (a, b) {
+  return a + b;
+}
+doSomething(thingToDo);
 ```
 
 ### Question #6
@@ -75,7 +88,7 @@ Select all that apply:
 ```
 [] Synchronous code runs at an even pace, asynchronous code runs with uneven pacing.
 [] Synchronous code runs all at the same time, asynchronous code runs completely randomly
-[] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
+[X] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
 ```
 
 ## Git
@@ -87,7 +100,7 @@ Which of the following represents a correct workflow for submitting a PR on a no
 
 Select 1:
 ```
-[] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
+[X] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <ga_dc_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] git clone <ga_dc_url>; git branch <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git pull; create pull request
@@ -103,9 +116,9 @@ Select all that apply:
 ```
 [] `$(".post").css("background", "peachpuff")`
 [] `$(".post").innerHTML`
-[] `$(".post").html()`
-[] `document.getElementsByClassName("post")[0].innerHTML`
-[] `document.getElementsByClassName("post").innerHTML`
+[X] `$(".post").html()`
+[X] `document.getElementsByClassName("post")[0].innerHTML`
+[X] `document.getElementsByClassName("post").innerHTML`
 ```
 
 ### Question #9
@@ -116,7 +129,9 @@ body, that says "hello".
 
 Your Answer:
 ```js
-// your code here
+$("button#greeting").on("click", function() {
+  $("body").append("<p>hello</p>");
+})
 ```
 
 ## Software Development Processes
@@ -131,5 +146,5 @@ role, goal, and reason for each.
 Finally, link to your repo on github in the space below.
 
 Your Answer:
-```text
+```https://github.com/Ly900/Project-1-Memory-game
 ```
