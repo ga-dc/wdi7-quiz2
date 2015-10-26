@@ -16,8 +16,22 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-```text
+A CSS clearfix is used to fix issues related to floating child elements within a parent element
 ```
+Normally we would do this
+<div>
+    <div style="float: left;">Sidebar</div>
+    <div style="clear: both;"></div>
+</div>
+With Cleatfix we need only
+<div class="clearfix">
+    <div style="float: left;" class="clearfix">Sidebar</div>
+</div>
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 ### Question #2
 
@@ -25,10 +39,8 @@ What does the following selector do?  `ul.dropdown > li`?
 
 Select 1:
 ```
-[] Selects all li's which are directly inside a ul of class dropdown (children)
-[] Selects all li's which are anywhere inside a ul of class dropdown (any descendant)
-[] Selects all ul's of class dropdown, as well as the children elements that are li's
-[] Selects all ul's of class dropdown, only if their children are exclusively li's
+[+] Selects all li's which are directly inside a ul of class dropdown (children)
+
 ```
 
 ## Scope/Context/Closures
@@ -38,7 +50,8 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-```text
+1. A variable that is declared outside a function definition is a global variable, and its value is accessible and modifiable throughout your program.
+2. A variable that is declared inside a function definition is local. It is created and destroyed every time the function is executed, and it can not be accessed by any code outside the function.
 ```
 
 
@@ -73,9 +86,7 @@ Your Answer:
 
 Select all that apply:
 ```
-[] Synchronous code runs at an even pace, asynchronous code runs with uneven pacing.
-[] Synchronous code runs all at the same time, asynchronous code runs completely randomly
-[] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
+[+] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
 ```
 
 ## Git
@@ -87,11 +98,7 @@ Which of the following represents a correct workflow for submitting a PR on a no
 
 Select 1:
 ```
-[] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
-[] fork on github; git clone <ga_dc_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
-[] git clone <ga_dc_url>; git branch <charlie_solution>; git add <files>; git commit; git push; create pull request
-[] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git pull; create pull request
-```
+[+] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 
 ## jQuery
 
@@ -101,12 +108,9 @@ Which of the following statements will work, assuming jQuery is loaded?
 
 Select all that apply:
 ```
-[] `$(".post").css("background", "peachpuff")`
-[] `$(".post").innerHTML`
-[] `$(".post").html()`
-[] `document.getElementsByClassName("post")[0].innerHTML`
-[] `document.getElementsByClassName("post").innerHTML`
-```
+[+] `$(".post").css("background", "peachpuff")`
+[+] `$(".post").html()`
+
 
 ### Question #9
 
@@ -116,14 +120,17 @@ body, that says "hello".
 
 Your Answer:
 ```js
-// your code here
-```
+$(document).ready(function() {
+  $('#greeting').click(function){
+  $('p').append('hello');
+});
+});
 
 ## Software Development Processes
 
 ### Question #10
 
-Create a repo for project 1. (You don't need to fork, just create a brand new repo).
+Create a repo for project 1. (You don''t need to fork, just create a brand new repo).
 
 Create a readme.md in that repo. In the readme, write out five (5) user stories for your first project. Be sure to include a
 role, goal, and reason for each.
@@ -131,5 +138,4 @@ role, goal, and reason for each.
 Finally, link to your repo on github in the space below.
 
 Your Answer:
-```text
-```
+https://github.com/mkotylevska/Project_1.git
