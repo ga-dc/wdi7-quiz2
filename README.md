@@ -16,7 +16,8 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-```text
+```
+A clearfix is used to position an image or the like into a container when it spills out because it is too big.  If the image is floated then it will sort of jump out of the borders.  By adding a clearfix property and setting an overflow to auto it will correct the problem.
 ```
 
 ### Question #2
@@ -27,7 +28,7 @@ Select 1:
 ```
 [] Selects all li's which are directly inside a ul of class dropdown (children)
 [] Selects all li's which are anywhere inside a ul of class dropdown (any descendant)
-[] Selects all ul's of class dropdown, as well as the children elements that are li's
+[x] Selects all ul's of class dropdown, as well as the children elements that are li's
 [] Selects all ul's of class dropdown, only if their children are exclusively li's
 ```
 
@@ -38,7 +39,9 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-```text
+```
+Scope refers to the context of a variable or function.  There is a local scope and a global one.  If a variable
+is defined globally it can be called locally.  But if it is defined locally it won't work to reference it outside of where it was called.  'var' is used to set scope so if 'var' is included when it is defined within a function, it will have a local scope and without it the scope can be global.  If a variable is defined outside of a function it is global regardless of the use of 'var'.
 ```
 
 
@@ -51,6 +54,13 @@ the variable pizza inside your method.
 
 Your Answer:
 ```js
+
+var pizza {
+  temperature: 70,
+  bake: function () {
+    temperature = 300;
+  }
+}
 // write code here
 ```
 
@@ -65,6 +75,11 @@ argument. Finally, demonstrate calling `doSomething` with a function.**
 Your Answer:
 ```js
 // write code here
+function doSomething (thingToDo) {
+  thingToDo;
+}
+
+doSomething (thingToDo);
 ```
 
 ### Question #6
@@ -75,7 +90,7 @@ Select all that apply:
 ```
 [] Synchronous code runs at an even pace, asynchronous code runs with uneven pacing.
 [] Synchronous code runs all at the same time, asynchronous code runs completely randomly
-[] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
+[x] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
 ```
 
 ## Git
@@ -87,7 +102,7 @@ Which of the following represents a correct workflow for submitting a PR on a no
 
 Select 1:
 ```
-[] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
+[x] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <ga_dc_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] git clone <ga_dc_url>; git branch <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git pull; create pull request
@@ -101,11 +116,11 @@ Which of the following statements will work, assuming jQuery is loaded?
 
 Select all that apply:
 ```
-[] `$(".post").css("background", "peachpuff")`
+[x] `$(".post").css("background", "peachpuff")`
 [] `$(".post").innerHTML`
-[] `$(".post").html()`
-[] `document.getElementsByClassName("post")[0].innerHTML`
-[] `document.getElementsByClassName("post").innerHTML`
+[x] `$(".post").html()`
+[x] `document.getElementsByClassName("post")[0].innerHTML`
+[x] `document.getElementsByClassName("post").innerHTML`
 ```
 
 ### Question #9
@@ -117,6 +132,7 @@ body, that says "hello".
 Your Answer:
 ```js
 // your code here
+$("#greeting").on("click",.append("<p>hello</p>"))
 ```
 
 ## Software Development Processes
@@ -131,5 +147,6 @@ role, goal, and reason for each.
 Finally, link to your repo on github in the space below.
 
 Your Answer:
-```text
+```
+https://github.com/dan-ator/Project-One
 ```
