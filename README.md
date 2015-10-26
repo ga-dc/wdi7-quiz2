@@ -16,7 +16,11 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-```text
+```Sometimes when using floats, an element can be displayed outside of its containing element. A clearfix is a way to change that.
+
+.clearfix {
+  overflow: auto;
+}
 ```
 
 ### Question #2
@@ -25,7 +29,7 @@ What does the following selector do?  `ul.dropdown > li`?
 
 Select 1:
 ```
-[] Selects all li's which are directly inside a ul of class dropdown (children)
+[X] Selects all li's which are directly inside a ul of class dropdown (children)
 [] Selects all li's which are anywhere inside a ul of class dropdown (any descendant)
 [] Selects all ul's of class dropdown, as well as the children elements that are li's
 [] Selects all ul's of class dropdown, only if their children are exclusively li's
@@ -38,7 +42,12 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-```text
+```
+From the lesson:
+1. Variables without `var` are global scope
+2. Variables with `var` are local scope
+3. All functions (and only functions) create a local scope
+4. The current scope includes all scopes that enclose it.
 ```
 
 
