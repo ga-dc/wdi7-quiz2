@@ -18,6 +18,17 @@ Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 Your Answer:
 ```
 Clearfix is a solution for layout issues that occur when elements are floated.
+
+Potential solutions: adding an empty div that overflow: auto; is applied to; i.e.
+
+HTML:
+<div class="clearfix"></div> 
+
+CSS:
+.clearfix {
+  overflow: auto;
+  }
+  
 ```
 
 ### Question #2
@@ -148,5 +159,6 @@ role, goal, and reason for each.
 Finally, link to your repo on github in the space below.
 
 Your Answer:
-```text
+```
+https://github.com/pzhang87/wdi-project1/blob/master/README.md
 ```
