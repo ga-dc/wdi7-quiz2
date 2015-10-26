@@ -69,7 +69,15 @@ argument. Finally, demonstrate calling `doSomething` with a function.**
 
 Your Answer:
 ```js
-// write code here
+function doSomething(thingToDo){
+  thingToDo();
+}
+
+function thingToDo(){
+  alert("The thing has been done.");
+}
+
+$(".hover-here-to-do-a-thing").hover(dosomething());
 ```
 
 ### Question #6
