@@ -40,7 +40,11 @@ Describe the rules of scope in JavaScript.
 
 Your Answer:
 ```
-Global variables are declared either outside any functions using "var x = 'blah'" or anywhere else with "x = blah". Local variables are declared within a function using "var x = blah" and can only be accessed by that function or other functions that contain its' scope. Functions have the ability to "look outside" for variables into other enclosing scopes, but not into other functions.
+Global variables are declared either outside any functions using "var x = 'blah'" or 
+anywhere else with "x = blah". Local variables are declared within a function using 
+"var x = blah" and can only be accessed by that function or other functions that contain 
+its' scope. Functions have the ability to "look outside" for variables into other enclosing 
+scopes, but not into other functions.
 ```
 
 
