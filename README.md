@@ -60,7 +60,13 @@ the variable pizza inside your method.
 
 Your Answer:
 ```js
-// write code here
+var pizza = {
+  temperature: 70
+  function bake(bakeInput) {
+    temperature = bakeInput
+  }
+}
+}
 ```
 
 ## Callbacks
@@ -84,7 +90,7 @@ Select all that apply:
 ```
 [] Synchronous code runs at an even pace, asynchronous code runs with uneven pacing.
 [] Synchronous code runs all at the same time, asynchronous code runs completely randomly
-[] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
+[X] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
 ```
 
 ## Git
@@ -96,7 +102,7 @@ Which of the following represents a correct workflow for submitting a PR on a no
 
 Select 1:
 ```
-[] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
+[X] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <ga_dc_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] git clone <ga_dc_url>; git branch <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git pull; create pull request
@@ -110,10 +116,10 @@ Which of the following statements will work, assuming jQuery is loaded?
 
 Select all that apply:
 ```
-[] `$(".post").css("background", "peachpuff")`
-[] `$(".post").innerHTML`
+[X] `$(".post").css("background", "peachpuff")`
+[X] `$(".post").innerHTML`
 [] `$(".post").html()`
-[] `document.getElementsByClassName("post")[0].innerHTML`
+[X] `document.getElementsByClassName("post")[0].innerHTML`
 [] `document.getElementsByClassName("post").innerHTML`
 ```
 
