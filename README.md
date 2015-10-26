@@ -22,16 +22,16 @@ A clearfix (created by Nicholas Gallagher) uses the pseudo-classes ::before and 
 Example:
 
 //in CSS file:
-``.clearfix {
+.clearfix {
   overflow:auto;
-}``
+}
 
 //in HTML will show:
-``<div class = "clearfix">
+<div class = "clearfix">
 ::before
 <div></div>
 ::after
-</div>``
+</div>
 
 ```
 
