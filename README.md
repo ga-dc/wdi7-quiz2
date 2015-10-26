@@ -16,7 +16,8 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-``The purpose of a clearfix in CSS is applied to a float-containing element. It will force the container element to expand, instead of collapse, and push all it's childern elements beneath.
+```
+The purpose of a clearfix in CSS is applied to a float-containing element. It will force the container element to expand, instead of collapse, and push all it's childern elements beneath.
 
 For example, if you floated an image you could use this clearfix technique by assigning the container a class of clearfix and creating pseudo elements, :before which is used to prevent the top-margin from collapsing and the :after to clear the previous floats. This would be the alternative to the "clear" CSS property in which you would have to add an empty div to the html document.
 
@@ -69,7 +70,8 @@ this method should set the pizza's temperature to be 300. Note: you may not use
 the variable pizza inside your method.
 
 Your Answer:
-```js
+```
+js
 
 var pizza = {
   temperature: 70,
