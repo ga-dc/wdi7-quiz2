@@ -16,7 +16,7 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-Clearix is a means of addressing some issues created when using 'float' for page layout purposes. Clearfix can expand the container the floated element is within, so that the container is intuitively sized around the floated object. Clearfix can be used with the 'before' or 'after' pseudo-classes.
+Clearfix is a means of addressing some issues created when using 'float' for page layout purposes. Clearfix can expand the container the floated element is within, so that the container is intuitively sized around the floated object. Clearfix can be used with the 'before' or 'after' pseudo-classes.
 
 .clearfix:after {
   content: ""; // to create emptiness
