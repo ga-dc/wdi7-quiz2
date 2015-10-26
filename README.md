@@ -129,7 +129,10 @@ body, that says "hello".
 
 Your Answer:
 ```js
-// your code here
+
+$("#greeting").click(function(){
+  $("body").append("<p>hello</p>");
+});
 ```
 
 ## Software Development Processes
