@@ -79,7 +79,7 @@ doSomething(thingToDo) {
   thingToDo();
   }
   
-doSomething(math);
+doSomething(math);  //should call math();
 ```
 
 ### Question #6
