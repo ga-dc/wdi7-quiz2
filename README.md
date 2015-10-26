@@ -16,7 +16,7 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-```text
+```The purpose of using clearfix in CSS is to fix problems related to floating child elements in parent elements.
 ```
 
 ### Question #2
@@ -25,7 +25,7 @@ What does the following selector do?  `ul.dropdown > li`?
 
 Select 1:
 ```
-[] Selects all li's which are directly inside a ul of class dropdown (children)
+[X] Selects all li's which are directly inside a ul of class dropdown (children)
 [] Selects all li's which are anywhere inside a ul of class dropdown (any descendant)
 [] Selects all ul's of class dropdown, as well as the children elements that are li's
 [] Selects all ul's of class dropdown, only if their children are exclusively li's
@@ -38,7 +38,8 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-```text
+```
+Scope refers to where variables and functions are available, and in what context it is being executed. A variable or function can be defined in a global or local scope. Variables have what is known as function scope, and functions have the same scope as variables.
 ```
 
 
@@ -51,7 +52,9 @@ the variable pizza inside your method.
 
 Your Answer:
 ```js
-// write code here
+// var pizza = temperature:"70", bake.start(300){
+
+}
 ```
 
 ## Callbacks
@@ -64,7 +67,9 @@ argument. Finally, demonstrate calling `doSomething` with a function.**
 
 Your Answer:
 ```js
-// write code here
+// <- doSomething(<thingToDo>) {
+ Do something interesting
+}
 ```
 
 ### Question #6
@@ -73,9 +78,9 @@ Your Answer:
 
 Select all that apply:
 ```
-[] Synchronous code runs at an even pace, asynchronous code runs with uneven pacing.
+[X] Synchronous code runs at an even pace, asynchronous code runs with uneven pacing.
 [] Synchronous code runs all at the same time, asynchronous code runs completely randomly
-[] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
+[X] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
 ```
 
 ## Git
@@ -90,7 +95,7 @@ Select 1:
 [] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <ga_dc_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] git clone <ga_dc_url>; git branch <charlie_solution>; git add <files>; git commit; git push; create pull request
-[] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git pull; create pull request
+[X] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git pull; create pull request
 ```
 
 ## jQuery
@@ -101,9 +106,9 @@ Which of the following statements will work, assuming jQuery is loaded?
 
 Select all that apply:
 ```
-[] `$(".post").css("background", "peachpuff")`
-[] `$(".post").innerHTML`
-[] `$(".post").html()`
+[X] `$(".post").css("background", "peachpuff")`
+[X] `$(".post").innerHTML`
+[X] `$(".post").html()`
 [] `document.getElementsByClassName("post")[0].innerHTML`
 [] `document.getElementsByClassName("post").innerHTML`
 ```
@@ -116,7 +121,9 @@ body, that says "hello".
 
 Your Answer:
 ```js
-// your code here
+// $(#greeting).on('click',appendParagraph = 'hello'){
+
+}
 ```
 
 ## Software Development Processes
@@ -131,5 +138,5 @@ role, goal, and reason for each.
 Finally, link to your repo on github in the space below.
 
 Your Answer:
-```text
+```git@github.com:MohamedGood/project1.git
 ```
