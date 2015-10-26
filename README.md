@@ -71,7 +71,7 @@ the variable pizza inside your method.
 
 Your Answer:
 ```
-js
+cjs
 
 var pizza = {
   temperature: 70,
@@ -170,5 +170,6 @@ role, goal, and reason for each.
 Finally, link to your repo on github in the space below.
 
 Your Answer:
-```https://github.com/beckybeauchamp1/Memory-Game/tree/master
+```
+https://github.com/beckybeauchamp1/Memory-Game/tree/master
 ```
