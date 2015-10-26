@@ -16,7 +16,13 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-```text
+```when using floats to align objects, if an image is taller than its parent element, the parent container will not expand to match its dimensions, resulting in an ugly overlap?
+
+.container:after {
+  content:"";
+  display:table;
+  clear:both;
+} was the method we used in class to combat this.
 ```
 
 ### Question #2
@@ -25,7 +31,7 @@ What does the following selector do?  `ul.dropdown > li`?
 
 Select 1:
 ```
-[] Selects all li's which are directly inside a ul of class dropdown (children)
+[x] Selects all li's which are directly inside a ul of class dropdown (children)
 [] Selects all li's which are anywhere inside a ul of class dropdown (any descendant)
 [] Selects all ul's of class dropdown, as well as the children elements that are li's
 [] Selects all ul's of class dropdown, only if their children are exclusively li's
@@ -38,7 +44,8 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-```text
+```var <variable> creates a variable of local scope, e.g. accessible only within current function and its descendants. closure--functions remember all variables within the scope from which they are called?
+<variable> declared without 'var' is declared as a global variable?
 ```
 
 
@@ -51,6 +58,10 @@ the variable pizza inside your method.
 
 Your Answer:
 ```js
+var pizza = {
+  temperature:70,
+  'bake':function(){this.temperature=300}
+}
 // write code here
 ```
 
@@ -64,6 +75,10 @@ argument. Finally, demonstrate calling `doSomething` with a function.**
 
 Your Answer:
 ```js
+var doSomething = function(thingToDo){
+  thingToDo();
+}
+doSomething();
 // write code here
 ```
 
@@ -75,7 +90,7 @@ Select all that apply:
 ```
 [] Synchronous code runs at an even pace, asynchronous code runs with uneven pacing.
 [] Synchronous code runs all at the same time, asynchronous code runs completely randomly
-[] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
+[x] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
 ```
 
 ## Git
@@ -87,7 +102,7 @@ Which of the following represents a correct workflow for submitting a PR on a no
 
 Select 1:
 ```
-[] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
+[x] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <ga_dc_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] git clone <ga_dc_url>; git branch <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git pull; create pull request
@@ -101,10 +116,10 @@ Which of the following statements will work, assuming jQuery is loaded?
 
 Select all that apply:
 ```
-[] `$(".post").css("background", "peachpuff")`
+[x] `$(".post").css("background", "peachpuff")`
 [] `$(".post").innerHTML`
-[] `$(".post").html()`
-[] `document.getElementsByClassName("post")[0].innerHTML`
+[x] `$(".post").html()`
+[x] `document.getElementsByClassName("post")[0].innerHTML`
 [] `document.getElementsByClassName("post").innerHTML`
 ```
 
@@ -116,6 +131,7 @@ body, that says "hello".
 
 Your Answer:
 ```js
+$('#greeting').on('click',function(){document.body.appendChild('<p>hello</p>')})
 // your code here
 ```
 
@@ -131,5 +147,6 @@ role, goal, and reason for each.
 Finally, link to your repo on github in the space below.
 
 Your Answer:
-```text
-```
+
+https://github.com/timothytgregg/War/tree/afternoon 
+
