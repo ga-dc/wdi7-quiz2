@@ -16,8 +16,8 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-```text
-```
+
+A clearfix is a trick used in CSS when floating elements. If a container (parent element) has nothing but floated elements in it, It's height will collapse and we will see a line at the top of the floated elements. We can fix this issue by either adding an empty div as the last child of the parent container, and adding clear: both to it, or using the clearfix hack (and adding it to our CSS file), and simply add the clearfix class to the parent container (e.g. <div id="container" class="clearfix"> </div>). The latter method works better because we don't have to add an empty HTML element in, which semantically doesn't make sense for the structure of the HTML document. Instead it utilizes psuedo selectors to clear both sides, without adding an extra element to our page.
 
 ### Question #2
 
@@ -25,7 +25,7 @@ What does the following selector do?  `ul.dropdown > li`?
 
 Select 1:
 ```
-[] Selects all li's which are directly inside a ul of class dropdown (children)
+[x] Selects all li's which are directly inside a ul of class dropdown (children)
 [] Selects all li's which are anywhere inside a ul of class dropdown (any descendant)
 [] Selects all ul's of class dropdown, as well as the children elements that are li's
 [] Selects all ul's of class dropdown, only if their children are exclusively li's
@@ -37,9 +37,7 @@ Select 1:
 
 Describe the rules of scope in JavaScript.
 
-Your Answer:
-```text
-```
+Scope refers to where variables are accessible in your code. By default, any variable not in a function belongs to the global object (window in HTML). Funtions are the only thing to create new scope in JavaScript, and to declare local variables in functions you have to use the VAR keyboard, otherwise they will become global variables. Varialbes from nested functions can access any variables in the functions that can't contain them, but parent functions cannot access variables from their children's functions.
 
 
 ### Question #4
@@ -50,9 +48,16 @@ this method should set the pizza's temperature to be 300. Note: you may not use
 the variable pizza inside your method.
 
 Your Answer:
-```js
-// write code here
-```
+
+var pizza = {
+
+  temperature: 70,
+
+  bake: function () {
+    this.temperature = 300;
+  }
+
+}
 
 ## Callbacks
 
@@ -63,9 +68,18 @@ Your Answer:
 argument. Finally, demonstrate calling `doSomething` with a function.**
 
 Your Answer:
-```js
-// write code here
-```
+
+function doSomething (thingToDo) {
+  return (function () {
+   return thingToDo
+})();
+
+}
+
+doSomething(2 + 2);
+4
+doSomething('Hello')
+"Hello"
 
 ### Question #6
 
@@ -75,7 +89,7 @@ Select all that apply:
 ```
 [] Synchronous code runs at an even pace, asynchronous code runs with uneven pacing.
 [] Synchronous code runs all at the same time, asynchronous code runs completely randomly
-[] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
+[x] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
 ```
 
 ## Git
@@ -87,7 +101,7 @@ Which of the following represents a correct workflow for submitting a PR on a no
 
 Select 1:
 ```
-[] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
+[X] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <ga_dc_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] git clone <ga_dc_url>; git branch <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git pull; create pull request
@@ -101,10 +115,10 @@ Which of the following statements will work, assuming jQuery is loaded?
 
 Select all that apply:
 ```
-[] `$(".post").css("background", "peachpuff")`
+[x] `$(".post").css("background", "peachpuff")`
 [] `$(".post").innerHTML`
-[] `$(".post").html()`
-[] `document.getElementsByClassName("post")[0].innerHTML`
+[x] `$(".post").html()`
+[x] `document.getElementsByClassName("post")[0].innerHTML`
 [] `document.getElementsByClassName("post").innerHTML`
 ```
 
@@ -115,9 +129,11 @@ Using jQuery, add an event listener for clicks on the button with the id
 body, that says "hello".
 
 Your Answer:
-```js
-// your code here
-```
+$('#greeting').on('click', function() {
+
+  $('body').append('<p> Hello </p>');
+
+  });
 
 ## Software Development Processes
 
@@ -131,5 +147,5 @@ role, goal, and reason for each.
 Finally, link to your repo on github in the space below.
 
 Your Answer:
-```text
-```
+
+https://github.com/dgorgan/war/blob/master/README.md
