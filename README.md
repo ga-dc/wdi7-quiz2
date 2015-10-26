@@ -89,11 +89,15 @@ Your Answer:
 ```js
 // write code here
 function doSomething(thingToDo){
-  console.log("Nick needs to " + thingToDo);
+  console.log("Nick needs to " + thingToDo());
+}
+
+function thing(){
+  return "punch Matt";
 }
 
 function outerFunction(){
-  doSomething("punch Matt");
+  doSomething(thing);
 }
 
 outerFunction();
