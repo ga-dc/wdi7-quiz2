@@ -38,7 +38,7 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-```text
+```JavaScript functions can only recognize variables declared within themselves or their parent function. This means variables declared within functions will not be recognized globally, and global variables will not be recognized by functions within functions unless they are scoped in using bind or self=this.
 ```
 
 
