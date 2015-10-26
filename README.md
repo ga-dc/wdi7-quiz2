@@ -76,7 +76,8 @@ Your Answer:
 ```js
 var pizza = {
   temperature: 70,
-  bake: this.temperature = 300;
+  bake: function () {
+    this.temperature = 300;
 }
 ```
 
