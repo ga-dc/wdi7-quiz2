@@ -16,16 +16,25 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-```text
 ```
+I think clearfix works with the relationship between parent and child elements,
+so the parent container resizes to hold the child element/s.
 
+So the CSS would be a class added to a container <div class="clearfix"></div>
+and in the stylesheet:
+.clearfix:after {
+    display:block;
+    clear:both;
+    content:"";
+}
+```
 ### Question #2
 
 What does the following selector do?  `ul.dropdown > li`?
 
 Select 1:
 ```
-[] Selects all li's which are directly inside a ul of class dropdown (children)
+[X] Selects all li's which are directly inside a ul of class dropdown (children)
 [] Selects all li's which are anywhere inside a ul of class dropdown (any descendant)
 [] Selects all ul's of class dropdown, as well as the children elements that are li's
 [] Selects all ul's of class dropdown, only if their children are exclusively li's
@@ -38,7 +47,11 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-```text
+```
+Scope is where variables can be referenced in JavaScript. Global and local variables
+have different scopes, of course.  Global variables are created without 'var' and
+can be used anywhere.  'Var' variables are local.  Functions create scope.  Current
+scope includes scopes that enclose it.
 ```
 
 
@@ -51,7 +64,10 @@ the variable pizza inside your method.
 
 Your Answer:
 ```js
-// write code here
+pizza = {
+  temperature:70,
+  bake: function() {temperature=4*temperature+20},
+  }
 ```
 
 ## Callbacks
@@ -64,7 +80,13 @@ argument. Finally, demonstrate calling `doSomething` with a function.**
 
 Your Answer:
 ```js
-// write code here
+function doSomething(thingToDo) {
+  prompt('what is this?')
+}
+function thingToDo(){
+  alert('quizzes are the thing to do')
+}
+doSomething()
 ```
 
 ### Question #6
@@ -75,7 +97,8 @@ Select all that apply:
 ```
 [] Synchronous code runs at an even pace, asynchronous code runs with uneven pacing.
 [] Synchronous code runs all at the same time, asynchronous code runs completely randomly
-[] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
+[X] Synchronous code runs in order (as appears in the source), asynchronous code
+may run at a later time.
 ```
 
 ## Git
@@ -87,7 +110,7 @@ Which of the following represents a correct workflow for submitting a PR on a no
 
 Select 1:
 ```
-[] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
+[X] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <ga_dc_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] git clone <ga_dc_url>; git branch <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git pull; create pull request
@@ -101,11 +124,11 @@ Which of the following statements will work, assuming jQuery is loaded?
 
 Select all that apply:
 ```
-[] `$(".post").css("background", "peachpuff")`
-[] `$(".post").innerHTML`
+[X] `$(".post").css("background", "peachpuff")`
+[X] `$(".post").innerHTML`
 [] `$(".post").html()`
-[] `document.getElementsByClassName("post")[0].innerHTML`
-[] `document.getElementsByClassName("post").innerHTML`
+[X] `document.getElementsByClassName("post")[0].innerHTML`
+[X] `document.getElementsByClassName("post").innerHTML`
 ```
 
 ### Question #9
@@ -116,7 +139,11 @@ body, that says "hello".
 
 Your Answer:
 ```js
-// your code here
+$('#greeting').on('click', appendHello)
+function appendHello(evt){
+  $('body').append('<p>hello</p>')
+}
+
 ```
 
 ## Software Development Processes
@@ -125,11 +152,12 @@ Your Answer:
 
 Create a repo for project 1. (You don't need to fork, just create a brand new repo).
 
-Create a readme.md in that repo. In the readme, write out five (5) user stories for your first project. Be sure to include a
+Create a readme.md in that repo. In the readme, write out five (5) user stories
+for your first project. Be sure to include a
 role, goal, and reason for each.
 
 Finally, link to your repo on github in the space below.
 
 Your Answer:
-```text
+```https://github.com/thomhouseholder/project_one_concentration
 ```
