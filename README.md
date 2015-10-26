@@ -9,6 +9,7 @@ the square brackets (for multiple-choice questions).
 4. Add/Commit/Push your changes to Github.
 5. Open a pull request.
 
+
 ## CSS
 
 ### Question #1
@@ -16,8 +17,8 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-```text
-```
+```clearfix is used to style information in boxes by giving the box an actual height so the information fits in it properly. One way you can do this is but using the psuedo-element :after. This creates a blank element that has height that the inner content can float in.
+``` -->
 
 ### Question #2
 
@@ -25,7 +26,7 @@ What does the following selector do?  `ul.dropdown > li`?
 
 Select 1:
 ```
-[] Selects all li's which are directly inside a ul of class dropdown (children)
+[x] Selects all li's which are directly inside a ul of class dropdown (children)
 [] Selects all li's which are anywhere inside a ul of class dropdown (any descendant)
 [] Selects all ul's of class dropdown, as well as the children elements that are li's
 [] Selects all ul's of class dropdown, only if their children are exclusively li's
@@ -38,9 +39,9 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-```text
+```Scope is where a variable can be called. The scope of an element can either be global or local. Global variables are defined outside a function (or inside a function without a var before their name) can be accessed anywhere in the script. Local variables are defined inside functions and only have their set value in the function in which they are defined.
 ```
-
+ -->
 
 ### Question #4
 
@@ -51,8 +52,16 @@ the variable pizza inside your method.
 
 Your Answer:
 ```js
+
 // write code here
+var pizza = {
+  temperature: 70,
+  bake: function (){
+    this.temperature = 300
+  }
+}
 ```
+-->
 
 ## Callbacks
 
@@ -65,7 +74,17 @@ argument. Finally, demonstrate calling `doSomething` with a function.**
 Your Answer:
 ```js
 // write code here
+
+function createAlert(arg) {
+  alert(arg)
+}
+function doSomthing(thingToDo) {
+  thingToDo('it works')
+}
+doSomthing(createAlert)
+
 ```
+-->
 
 ### Question #6
 
@@ -75,7 +94,7 @@ Select all that apply:
 ```
 [] Synchronous code runs at an even pace, asynchronous code runs with uneven pacing.
 [] Synchronous code runs all at the same time, asynchronous code runs completely randomly
-[] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
+[x] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
 ```
 
 ## Git
@@ -87,7 +106,7 @@ Which of the following represents a correct workflow for submitting a PR on a no
 
 Select 1:
 ```
-[] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
+[x] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <ga_dc_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] git clone <ga_dc_url>; git branch <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git pull; create pull request
@@ -101,23 +120,30 @@ Which of the following statements will work, assuming jQuery is loaded?
 
 Select all that apply:
 ```
-[] `$(".post").css("background", "peachpuff")`
+[x] `$(".post").css("background", "peachpuff")`
 [] `$(".post").innerHTML`
-[] `$(".post").html()`
-[] `document.getElementsByClassName("post")[0].innerHTML`
+[x] `$(".post").html()`
+[x] `document.getElementsByClassName("post")[0].innerHTML`
 [] `document.getElementsByClassName("post").innerHTML`
 ```
 
 ### Question #9
 
-Using jQuery, add an event listener for clicks on the button with the id
+**Using jQuery, add an event listener for clicks on the button with the id
 'greeting'. When the event happens, the code should append a paragraph to the
-body, that says "hello".
+body, that says "hello".**
 
 Your Answer:
 ```js
-// your code here
+write code here
+
+<button id=greeting>push me</button>
+
+$('#greeting').on('click', function(){
+  $('<p>hello</p>').appendTo($('body'))
+})
 ```
+-->
 
 ## Software Development Processes
 
@@ -131,5 +157,5 @@ role, goal, and reason for each.
 Finally, link to your repo on github in the space below.
 
 Your Answer:
-```text
+https://github.com/ascreven/Guess-the-Location
 ```
