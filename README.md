@@ -17,6 +17,11 @@ Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
 ```Clearfix is used to fix floating issues. It automatically has the element clear its child elements.
+ .clearfix {
+   overflow: auto;
+ }
+
+/// <div class="clearfix"> in the html
 
 ```
 
@@ -27,9 +32,12 @@ What does the following selector do?  `ul.dropdown > li`?
 Select 1:
 ```
 [x] Selects all li's which are directly inside a ul of class dropdown (children)
+
 [] Selects all li's which are anywhere inside a ul of class dropdown (any descendant)
+
 [] Selects all ul's of class dropdown, as well as the children elements that are li's
-[x] Selects all ul's of class dropdown, only if their children are exclusively li's
+
+[] Selects all ul's of class dropdown, only if their children are exclusively li's
 ```
 
 ## Scope/Context/Closures
@@ -39,7 +47,9 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-``In JavaScript, scope is the set of variables, objects, and functions you have access to.
+``In JavaScript, scope is the set of variables, objects, and functions you have access to. There's local scope and global scope; local scope refers to the context in which variables objects and functions are used within a function. This is implemented by 'this' and 'bind'. Global scope refers to the use of objects variables and functions within the entire script (out side of the functions).
+
+I think.
 ```
 
 
@@ -51,8 +61,13 @@ this method should set the pizza's temperature to be 300. Note: you may not use
 the variable pizza inside your method.
 
 Your Answer:
-```js
-// write code here
+```
+var pizza = {
+  var temperature = 70;
+  var bake = function() {
+    temperature = 300;
+  }
+}
 ```
 
 ## Callbacks
@@ -64,8 +79,18 @@ Your Answer:
 argument. Finally, demonstrate calling `doSomething` with a function.**
 
 Your Answer:
-```js
-// write code here
+```var doSomething = function(thingToDo) {
+  thingToDo();
+}
+  var greeting = function () {
+    console.log("HI!");
+  }
+  var bye = function () {
+    console.log("laterr");
+  }
+
+doSomething(greeting);
+doSomething(bye);
 ```
 
 ### Question #6
@@ -76,7 +101,7 @@ Select all that apply:
 ```
 [] Synchronous code runs at an even pace, asynchronous code runs with uneven pacing.
 [] Synchronous code runs all at the same time, asynchronous code runs completely randomly
-[x] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
+[] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
 ```
 
 ## Git
@@ -88,7 +113,7 @@ Which of the following represents a correct workflow for submitting a PR on a no
 
 Select 1:
 ```
-[] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
+[x] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <ga_dc_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] git clone <ga_dc_url>; git branch <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git pull; create pull request
@@ -102,10 +127,10 @@ Which of the following statements will work, assuming jQuery is loaded?
 
 Select all that apply:
 ```
-[] `$(".post").css("background", "peachpuff")`
+[x] `$(".post").css("background", "peachpuff")`
 [] `$(".post").innerHTML`
-[] `$(".post").html()`
-[] `document.getElementsByClassName("post")[0].innerHTML`
+[x] `$(".post").html()`
+[x] `document.getElementsByClassName("post")[0].innerHTML`
 [] `document.getElementsByClassName("post").innerHTML`
 ```
 
