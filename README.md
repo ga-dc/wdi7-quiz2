@@ -16,8 +16,10 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-```text
-```
+Helps to contain images within an element so it does not float which happens when the image is taller than the element containing it.
+.clearfix {
+  overflow: auto;
+}
 
 ### Question #2
 
@@ -28,7 +30,7 @@ Select 1:
 [] Selects all li's which are directly inside a ul of class dropdown (children)
 [] Selects all li's which are anywhere inside a ul of class dropdown (any descendant)
 [] Selects all ul's of class dropdown, as well as the children elements that are li's
-[] Selects all ul's of class dropdown, only if their children are exclusively li's
+[x] Selects all ul's of class dropdown, only if their children are exclusively li's
 ```
 
 ## Scope/Context/Closures
@@ -38,8 +40,7 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-```text
-```
+Variables declared outside of a function are global scopes. Global scopes can be accessed from anywhere in code. Local scopes are created by functions and can be accessed from within.
 
 
 ### Question #4
@@ -50,9 +51,10 @@ this method should set the pizza's temperature to be 300. Note: you may not use
 the variable pizza inside your method.
 
 Your Answer:
-```js
-// write code here
-```
+var pizza = { temperature:70, type:cheese
+}
+this.bake(70+230)
+
 
 ## Callbacks
 
@@ -63,9 +65,9 @@ Your Answer:
 argument. Finally, demonstrate calling `doSomething` with a function.**
 
 Your Answer:
-```js
-// write code here
-```
+function doSomething (x,y) {
+    return thingToDo(x) + (y);
+}
 
 ### Question #6
 
@@ -73,9 +75,9 @@ Your Answer:
 
 Select all that apply:
 ```
-[] Synchronous code runs at an even pace, asynchronous code runs with uneven pacing.
-[] Synchronous code runs all at the same time, asynchronous code runs completely randomly
-[] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
+[x] Synchronous code runs at an even pace, asynchronous code runs with uneven pacing.
+[x] Synchronous code runs all at the same time, asynchronous code runs completely randomly
+[x] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
 ```
 
 ## Git
@@ -86,7 +88,7 @@ Which of the following represents a correct workflow for submitting a PR on a no
 (ignore the lack of commit messages)
 
 Select 1:
-```
+Not sure!
 [] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <ga_dc_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] git clone <ga_dc_url>; git branch <charlie_solution>; git add <files>; git commit; git push; create pull request
@@ -101,9 +103,9 @@ Which of the following statements will work, assuming jQuery is loaded?
 
 Select all that apply:
 ```
-[] `$(".post").css("background", "peachpuff")`
-[] `$(".post").innerHTML`
-[] `$(".post").html()`
+[x] `$(".post").css("background", "peachpuff")`
+[x] `$(".post").innerHTML`
+[x] `$(".post").html()`
 [] `document.getElementsByClassName("post")[0].innerHTML`
 [] `document.getElementsByClassName("post").innerHTML`
 ```
@@ -115,9 +117,7 @@ Using jQuery, add an event listener for clicks on the button with the id
 body, that says "hello".
 
 Your Answer:
-```js
-// your code here
-```
+$ .on(click[,alert][,hello],<p>)
 
 ## Software Development Processes
 
@@ -131,5 +131,4 @@ role, goal, and reason for each.
 Finally, link to your repo on github in the space below.
 
 Your Answer:
-```text
-```
+Project-One/README.md
